@@ -9,9 +9,6 @@
 a {
     text-decoration: none;
     color: #FFFFFF;
-}
-
-a:hover {
     cursor: pointer;
 }
 
@@ -155,8 +152,10 @@ a:hover {
 
 .hero-content img {
     position: absolute;
-    top: 153px;
+    top: 185px;
     left: 442px;
+    height: 468px;
+    width: 535px;
 }
 
 .hero h3 {
@@ -169,7 +168,7 @@ a:hover {
 .sub-title-right h3{
     position: absolute;
     top: 216px;
-    left: 1170px;
+    left: 1140px;
 }
 
 .sub-title-left h3 {
@@ -184,7 +183,7 @@ a:hover {
 
 .sub-title-right .ellipse {
     top: 228px;
-    left: 1148px;
+    left: 1118px;
 }
 
 .sub-title-left .ellipse {
@@ -194,12 +193,12 @@ a:hover {
 
 .sub-line-right .short-line img {  
     top: 234.97px;
-    left: 936.47px;
+    left: 906.47px;
 }
 
 .sub-line-right .long-line img {
     top: 236px;
-    left: 977px;
+    left: 947px;
 }
 
 .sub-title-left .short-line img {
@@ -223,14 +222,11 @@ footer .social-media {
     height: 32px;
     display: flex;
     justify-content: space-between;
-    margin: 104px 75px 70px auto;
+    margin: 80px 75px 70px auto;
 }
 
 footer .social-media img {
     height: 32px;
     width: 32px;
-}
-
-footer .social-media img:hover {
     cursor: pointer;
 }
