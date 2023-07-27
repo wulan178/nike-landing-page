@@ -1,75 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>NIKE</title>
 </head>
+
 <body>
-    <section class="wrap-nav">
-        <div class="logo">
-            <img src="./assets/img/nike.svg" alt="nike logo">
-        </div>
-        <div class="navbar">
-            <nav class="nav-links">
-                <li><a href="#;">Home</a><div class="dotted-active"></div></li>
-		<li><a href="#;">About us</a><div class="dotted"></div></li>
-		<li><a href="#;">Material</a><div class="dotted"></div></li>
-                <li><a href="#;">Market</a><div class="dotted"></div></li>
-                <li><a href="#;">Contact</a><div class="dotted"></div></li>
-            </nav>
-        </div>
-        <div class="btn-primary">
-            <button><a href="#">Shop</a></button>
-        </div>
-    </section>
-
-    <section class="hero">
-        <div class="dots">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li><span class="fill-dotted">.....</span></li>
-        </div>
-        <div class="hero-content">
-            <h2>JUST DO IT.</h2>
-            <div class="big-title">NIKE</div>
-            <img src="./assets/img/shoe.svg" alt="NIKE">
-        </div>
-        <div class="sub-title">
-            <div class="sub-title-right">
-                <h3>Rubber</h3>
-                <div class="sub-line-right">
-                    <div class="short-line"><img src="./assets/img/line1.svg"></div>
-                    <div class="long-line"><img src="./assets/img/line2.svg"></div>
-                </div>
-                <div class="ellipse"><img src="./assets/img/ellipse.svg"></div>
+    <main class="w-screen h-screen overflow-hidden py-4 md:py-7">
+        <nav class="flex items-center justify-between gap-2 md:px-10 px-6">
+            <img src="./assets/img/nike.svg" alt="nike logo" class="w-20 h-20 md:w-auto md:h-auto">
+            <div class="flex">
+                <ul class="flex flex-wrap md:flex-nowrap justify-center md:gap-4 gap-3">
+                    <li
+                        class="relative text-xs sm:text-sm md:text-base text-white font-medium after:absolute after:content-[''] after:bg-white after:bottom-0 after:w-1 after:h-1 after:rounded-full after:left-1/2">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="relative text-xs sm:text-sm md:text-base text-white font-medium"><a href="#">About us</a>
+                    </li>
+                    <li class="relative text-xs sm:text-sm md:text-base text-white font-medium"><a href="#">Material</a>
+                    </li>
+                    <li class="relative text-xs sm:text-sm md:text-base text-white font-medium"><a href="#">Market</a>
+                    </li>
+                    <li class="relative text-xs sm:text-sm md:text-base text-white font-medium"><a href="#">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <div class="sub-title-left">
-                <h3>Textiles</h3>
-                <div class="sub-line-left">
-                    <div class="short-line"><img src="./assets/img/line3.svg"></div>
-                    <div class="long-line"><img src="./assets/img/line4.svg"></div>
-                </div>
-                <div class="ellipse"><img src="./assets/img/ellipse.svg"></div>
-            </div>
-        </div>    
-    </section>
+            <button class="md:relative absolute bottom-0 w-11/12 sm:w-10/12 left-1/2 -translate-x-1/2 md:left-0 md:-translate-x-0 mb-3 md:mb-0 md:w-max md:block md:px-12 px-8 py-2 font-semibold text-white border border-2 rounded-full">
+                <a href="#">Shop</a>
+            </button>
+        </nav>
 
-    <footer>
-        <div class="social-media">
-            <img src="./assets/img/instagram.svg" alt="instagram">
-            <img src="./assets/img/figma.svg" alt="figma">
-            <img src="./assets/img/dribbble.svg" alt="dribbble">
-            <img src="./assets/img/linkedin.svg" alt="linkedin">
+        <div class="md:grid md:grid-cols-12 flex flex-col-reverse h-full my-auto mb-3 pt-5 sm:pt-0">
+            <ul class="md:col-span-1 flex flex-col md:gap-2 gap-1 items-center justify-center rotate-90 md:rotate-0 md:mb-0 mb-auto">
+                <li class="w-2 h-2 rounded-full border border-white"></li>
+                <li class="w-2 h-2 rounded-full border border-white"></li>
+                <li class="w-2 h-2 rounded-full border border-white"></li>
+                <li class="w-2 h-2 rounded-full border border-white bg-white"></li>
+            </ul>
+            <div class="md:col-span-11 flex flex-col items-center justify-center relative lg:w-[54rem] w-[90vw] mx-auto mt-10 sm:mt-4 md:mt-0">
+                <h3 class="text-xl font-bold text-white left-2 md:left-3 mx-auto absolute top-0 md:top-20 lg:top-24">JUST DO IT.
+                </h3>
+                <img src="./assets/img/shoe.png" alt="NIKE" class="lg:w-[54rem] w-[90vw] mx-auto mt-10">
+                <div class="flex md:ml-auto items-center md:gap-3 gap-1.5 pb-4 mt-4 md:mt-0">
+                    <a href="#"><img src="./assets/img/instagram.svg" alt="instagram" class="md:w-7 md:h-7 w-6 h-6">
+                    </a>
+                    <a href="#"><img src="./assets/img/figma.svg" alt="figma" class="md:w-7 md:h-7 w-6 h-6">
+                    </a>
+                    <a href="#"><img src="./assets/img/dribbble.svg" alt="dribbble" class="md:w-7 md:h-7 w-6 h-6">
+                    </a>
+                    <a href="#"><img src="./assets/img/linkedin.svg" alt="linkedin" class="md:w-7 md:h-7 w-6 h-6">
+                    </a>
+                </div>
+            </div>
         </div>
-    </footer>
+    </main>
 </body>
+
 </html>
